@@ -1,0 +1,21 @@
+A=int(input())
+B=int(input())
+L=int(input())
+X=0
+Y=0
+Z=0
+while X<L:
+    Y+=1
+    if Y%2 == 0:
+        X=X+B
+    else:
+        X=X+A
+    Z+=1
+if Z % 4 == 0:
+    print("LEFT")
+elif Z % 3 == 0:
+    print("TOP")
+elif Z % 2 == 0:
+    print("RIGHT")
+else:
+    print("BOTTOM")
