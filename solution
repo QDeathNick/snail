@@ -1,20 +1,15 @@
-A=int(input())
-B=int(input())
-L=int(input())
+#на какой стороне прямоугольника остановится улитка, бегущая по нему дистанцию из левого нижнего угла направо
+A=int(input()) #Сторона A
+B=int(input()) #Сторона B
+L=int(input()) #L длина дистанции
 #Задаем переменные для дальнейших вычислений
-X=0 #Отвечает за количество пройденного растояния
-Y=0 #Отвечает за количество пройденных сторон
-while X<L: 
-    if Y%2 == 0:
-        X=X+B
-    else:
-        X=X+A
-    Z+=1 
-if Z % 4 == 0:
-    print("LEFT")
-elif Z % 3 == 0:
-    print("TOP")
-elif Z % 2 == 0:
-    print("RIGHT")
-else:
-    print("BOTTOM")
+E = L % (2A+2B) # Длина последненго круга до финиша
+
+if E<A then
+    print ("BOTTOM")
+elseif E<(A+B) then
+    print ("RIGHT")
+elseif E<(A+B+A) then
+    print ("TOP")
+else
+    print ("LEFT")
